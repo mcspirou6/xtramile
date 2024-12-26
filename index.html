@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <nav class="navbar">
@@ -34,25 +36,25 @@
         </div>
     </section>
 
-    <section id="consoles">
+    <section id="consoles" data-aos="fade-up" data-aos-duration="1000">
         <h2>Nos Consoles</h2>
         <div class="console-grid">
-            <div class="console-card" data-console="ps5">
+            <div class="console-card" data-console="ps5" data-aos="fade-up" data-aos-delay="100">
                 <i class="fas fa-gamepad"></i>
                 <h3>PlayStation 5</h3>
                 <p>Découvrez la nouvelle génération de gaming</p>
             </div>
-            <div class="console-card" data-console="ps4">
+            <div class="console-card" data-console="ps4" data-aos="fade-up" data-aos-delay="200">
                 <i class="fas fa-gamepad"></i>
                 <h3>PlayStation 4</h3>
                 <p>Une collection immense de jeux</p>
             </div>
-            <div class="console-card" data-console="xbox">
+            <div class="console-card" data-console="xbox" data-aos="fade-up" data-aos-delay="300">
                 <i class="fas fa-gamepad"></i>
                 <h3>Xbox</h3>
                 <p>Une expérience gaming unique</p>
             </div>
-            <div class="console-card" data-console="vr">
+            <div class="console-card" data-console="vr" data-aos="fade-up" data-aos-delay="400">
                 <i class="fas fa-vr-cardboard"></i>
                 <h3>Réalité Virtuelle</h3>
                 <p>Immersion totale garantie</p>
@@ -60,7 +62,7 @@
         </div>
     </section>
 
-    <section id="tarifs">
+    <section id="tarifs" data-aos="fade-up" data-aos-duration="1000">
         <h2>Nos Tarifs</h2>
         <div class="pricing-card">
             <h3>Tarif Standard</h3>
@@ -74,7 +76,38 @@
         </div>
     </section>
 
-    <section id="localisation">
+    <section id="galerie" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Notre Galerie</h2>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="https://th.bing.com/th/id/R.56ec4f0a3d199a36673b00c2905100e2?rik=3NsarrMKaCg4TA&pid=ImgRaw&r=0" alt="Jeunes jouant aux jeux vidéo">
+                <div class="text">Ambiance conviviale entre amis</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/736x/db/6c/07/db6c0753af3fb9130161e194bc743059.jpg"" alt="Joueurs concentrés">
+                <div class="text">Compétition amicale</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="https://i.pinimg.com/736x/93/0e/d7/930ed7b9f176f09cc4fdfaa2d1ab1dbc.jpg" alt="Gaming en groupe">
+                <div class="text">Moments de partage</div>
+            </div>
+
+            <!-- Boutons précédent/suivant -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <!-- Points/cercles -->
+        <div class="dots-container" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section id="localisation" data-aos="fade-up" data-aos-duration="1000">
         <h2>Nous Trouver</h2>
         <div class="location-info">
             <p><i class="fas fa-map-marker-alt"></i> Calavi, sur les pavés Kérékou</p>
@@ -135,6 +168,9 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
 
