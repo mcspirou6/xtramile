@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xtramile - Salle de Jeux à Calavi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Xtramile</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#consoles">Consoles</a>
+            <a href="#tarifs">Tarifs</a>
+            <a href="#galerie">Galerie</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    
+
+    <section id="hero" style="background-image: url('https://www.pcgamesn.com/wp-content/sites/pcgamesn/2023/07/ea-sports-fc-24-faces.jpg'); background-size: cover; background-position: center;">
+        <div class="overlay"></div>
+        <div id="canvas-container"></div>
+        <div class="hero-content">
+            <h1>Bienvenue chez Xtramile</h1>
+            <p>Votre destination gaming ultime à Calavi</p>
+            <a href="#consoles" class="cta-button">Découvrir nos consoles</a>
+        </div>
+    </section>
+
+    <section id="consoles">
+        <h2>Nos Consoles</h2>
+        <div class="console-grid">
+            <div class="console-card" data-console="ps5">
+                <i class="fas fa-gamepad"></i>
+                <h3>PlayStation 5</h3>
+                <p>Découvrez la nouvelle génération de gaming</p>
+            </div>
+            <div class="console-card" data-console="ps4">
+                <i class="fas fa-gamepad"></i>
+                <h3>PlayStation 4</h3>
+                <p>Une collection immense de jeux</p>
+            </div>
+            <div class="console-card" data-console="xbox">
+                <i class="fas fa-gamepad"></i>
+                <h3>Xbox</h3>
+                <p>Une expérience gaming unique</p>
+            </div>
+            <div class="console-card" data-console="vr">
+                <i class="fas fa-vr-cardboard"></i>
+                <h3>Réalité Virtuelle</h3>
+                <p>Immersion totale garantie</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tarifs">
+        <h2>Nos Tarifs</h2>
+        <div class="pricing-card">
+            <h3>Tarif Standard</h3>
+            <div class="price">1500 F CFA</div>
+            <p>par heure</p>
+        </div>
+        <div class="pricing-card special">
+            <h3>Offre Spéciale</h3>
+            <div class="price">4500 F CFA</div>
+            <p>3 heures + 1 heure GRATUITE</p>
+        </div>
+    </section>
+
+    <section id="localisation">
+        <h2>Nous Trouver</h2>
+        <div class="location-info">
+            <p><i class="fas fa-map-marker-alt"></i> Calavi, sur les pavés Kérékou</p>
+            <p><i class="fas fa-clock"></i> Ouvert tous les jours de 10h à 22h</p>
+            <p><i class="fas fa-phone"></i> Contact: +229 01 99 90 91 00</p>
+        </div>
+        <section id="jeux-recents">
+            <h2>Jeux Récents et Tendance</h2>
+            <div class="jeux-grid">
+                <div class="jeu-card">
+                    <img src="https://i.pinimg.com/736x/69/46/8f/69468ff8ec8657d9ed22a521acc060be.jpg" alt="EA Sports FC 25">
+                    <h3>EA Sports FC 25</h3>
+                    <p>La nouvelle ère du football virtuel avec des graphismes améliorés et des fonctionnalités innovantes.</p>
+                </div>
+                <div class="jeu-card">
+                    <img src="https://i.pinimg.com/736x/f6/e6/35/f6e635c823a8d8e6c73b7e10767cf719.jpg" alt="Grand Theft Auto V">
+                    <h3>Grand Theft Auto V</h3>
+                    <p>Plongez dans l'univers ouvert de Los Santos avec des missions palpitantes et une liberté totale.</p>
+                </div>
+                <div class="jeu-card">
+                    <img src="https://i.pinimg.com/736x/73/76/16/7376161d93cba6f27a286d593bbc3e5a.jpg" alt="God of War Ragnarök">
+                    <h3>God of War Ragnarök</h3>
+                    <p>Rejoignez Kratos et Atreus dans leur quête épique à travers les mystères de la mythologie nordique.</p>
+                </div>
+                <div class="jeu-card">
+                    <img src="https://i.pinimg.com/736x/83/09/13/830913691c59c132a03fddb8bc1f2548.jpg" alt="Marvel's Spider-Man 2">
+                    <h3>Marvel's Spider-Man 2</h3>
+                    <p>Incarnez Peter Parker et Miles Morales dans une nouvelle aventure contre des ennemis redoutables.</p>
+                </div>
+            </div>
+        </section>
+        
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Xtramile</h4>
+                <p>Votre salle de jeux moderne à Calavi</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: contact@xtramile.bj</p>
+                <p>Tél: +229 01 99 90 91 00</p>
+            </div>
+            <div class="footer-section">
+                <h4>Suivez-nous</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Xtramile. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+          
