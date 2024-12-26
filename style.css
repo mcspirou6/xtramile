@@ -243,11 +243,9 @@ footer {
 
 .jeux-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    margin: 0 auto;
-    max-width: 1200px;
-    
+    padding: 20px;
 }
 
 .jeu-card {
@@ -483,5 +481,77 @@ footer {
 
     .hamburger.active i {
         transform: rotate(90deg);
+    }
+}
+
+/* Styles de base pour les sections */
+section {
+    padding: 5rem 2rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+/* Responsive pour mobile */
+@media (max-width: 768px) {
+    section {
+        padding: 3rem 1rem;
+        margin: 0; /* Supprime les marges entre sections */
+        width: 100%;
+    }
+
+    /* Ajustement des grilles */
+    .console-grid,
+    .jeux-grid,
+    .pricing-grid {
+        grid-template-columns: 1fr; /* Une seule colonne */
+        gap: 1.5rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    /* Ajustement des cartes */
+    .console-card,
+    .jeu-card,
+    .pricing-card {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Ajustement de la galerie */
+    .slideshow-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Ajustement du footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0;
+    }
+
+    /* Ajustement de la section localisation */
+    #map {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Conteneurs internes */
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .jeux-grid {
+        grid-template-columns: 1fr;  /* Affiche une seule colonne sur mobile */
+        width: 100%;                 /* Occupe toute la largeur disponible */
+        padding: 10px;              /* Réduit le padding sur mobile */
+    }
+    
+    .jeu-card {
+        width: 100%;               /* Les cartes occupent toute la largeur */
     }
 }
