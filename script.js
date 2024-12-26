@@ -98,8 +98,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    
     navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
 }
+
+// Fermer le menu quand on clique sur un lien
+document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+        const navLinks = document.querySelector('.nav-links');
+        const hamburger = document.querySelector('.hamburger');
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+    });
+});
 
 let slideIndex = 1;
 showSlides(slideIndex);
